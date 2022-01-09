@@ -1,0 +1,374 @@
+﻿++Rozwiązanie „WebApplication1” ‎(liczba projektów: 1 z 1)
+i:{00000000-0000-0000-0000-000000000000}:WebApplication1.sln
+++WebApplication1
+i:{00000000-0000-0000-0000-000000000000}:WebApplication1
+++Properties
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\properties\
+++AssemblyInfo.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\properties\assemblyinfo.cs
+++Odwołania
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Antlr3.Runtime
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.AspNetCore.Authorization
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.AspNetCore.Hosting.Abstractions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.AspNetCore.Hosting.Server.Abstractions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.AspNetCore.Http
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.AspNetCore.Http.Abstractions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.AspNetCore.Http.Extensions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.AspNetCore.Http.Features
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.AspNetCore.JsonPatch
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.AspNetCore.Mvc.Abstractions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.AspNetCore.Mvc.Core
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.AspNetCore.Mvc.Formatters.Json
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.AspNetCore.Routing
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.AspNetCore.Routing.Abstractions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.AspNetCore.WebUtilities
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.CSharp
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.DotNet.InternalAbstractions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.Extensions.Configuration.Abstractions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.Extensions.DependencyInjection.Abstractions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.Extensions.DependencyModel
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.Extensions.FileProviders.Abstractions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.Extensions.Logging.Abstractions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.Extensions.ObjectPool
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.Extensions.Options
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.Extensions.PlatformAbstractions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.Extensions.Primitives
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.Net.Http.Headers
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.OpenApi
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Microsoft.Web.Infrastructure
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Newtonsoft.Json
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++Swashbuckle.AspNetCore.Swagger
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Buffers
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Collections.NonGeneric
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.ComponentModel.DataAnnotations
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.ComponentModel.Primitives
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.ComponentModel.TypeConverter
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Configuration
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Core
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Data
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Data.DataSetExtensions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Diagnostics.DiagnosticSource
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Drawing
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Linq
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Memory
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Net.Http
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Net.Http.Formatting
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Net.Http.WebRequest
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Numerics
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Numerics.Vectors
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Runtime.CompilerServices.Unsafe
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Runtime.Extensions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Runtime.Serialization
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Runtime.Serialization.Primitives
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Text.Encodings.Web
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.Abstractions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.ApplicationServices
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.Cors
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.Entity
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.Helpers
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.Http
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.Http.Cors
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.Http.WebHost
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.Mvc
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.Optimization
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.Razor
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.Routing
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.WebPages
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.WebPages.Deployment
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Web.WebPages.Razor
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Xml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++System.Xml.Linq
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++WebGrease
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:
+++App_Data
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\app_data\
+++App_Start
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\app_start\
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\app_start\
+++BundleConfig.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\app_start\bundleconfig.cs
+++FilterConfig.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\app_start\filterconfig.cs
+++RouteConfig.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\app_start\routeconfig.cs
+++WebApiConfig.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\app_start\webapiconfig.cs
+++Areas
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\
+++HelpPage
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\
+++Controllers
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\controllers\
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\controllers\
+++ModelDescriptions
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\
+++Models
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\models\
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\models\
+++SampleGeneration
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\samplegeneration\
+++Views
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\views\
+++ApiDescriptionExtensions.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\apidescriptionextensions.cs
+++HelpPage.css
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\helppage.css
+++HelpPageAreaRegistration.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\helppagearearegistration.cs
+++HelpPageConfigurationExtensions.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\helppageconfigurationextensions.cs
+++XmlDocumentationProvider.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\xmldocumentationprovider.cs
+++Content
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\content\
+++HomeController.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\controllers\homecontroller.cs
+++ValuesController.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\controllers\valuescontroller.cs
+++fonts
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\fonts\
+++Scripts
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\scripts\
+++favicon.ico
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\favicon.ico
+++Global.asax
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\global.asax
+++Global.asax.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\global.asax.cs
+++packages.config
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\packages.config
+++Web.config
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\web.config
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\web.config
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\views\web.config
+++Web.Debug.config
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\web.debug.config
+++Web.Release.config
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\web.release.config
+++HelpPageConfig.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\app_start\helppageconfig.cs
+++HelpController.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\controllers\helpcontroller.cs
+++CollectionModelDescription.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\collectionmodeldescription.cs
+++ComplexTypeModelDescription.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\complextypemodeldescription.cs
+++DictionaryModelDescription.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\dictionarymodeldescription.cs
+++EnumTypeModelDescription.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\enumtypemodeldescription.cs
+++EnumValueDescription.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\enumvaluedescription.cs
+++IModelDocumentationProvider.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\imodeldocumentationprovider.cs
+++KeyValuePairModelDescription.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\keyvaluepairmodeldescription.cs
+++ModelDescription.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\modeldescription.cs
+++ModelDescriptionGenerator.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\modeldescriptiongenerator.cs
+++ModelNameAttribute.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\modelnameattribute.cs
+++ModelNameHelper.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\modelnamehelper.cs
+++ParameterAnnotation.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\parameterannotation.cs
+++ParameterDescription.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\parameterdescription.cs
+++SimpleTypeModelDescription.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\modeldescriptions\simpletypemodeldescription.cs
+++HelpPageApiModel.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\models\helppageapimodel.cs
+++HelpPageSampleGenerator.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\samplegeneration\helppagesamplegenerator.cs
+++HelpPageSampleKey.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\samplegeneration\helppagesamplekey.cs
+++ImageSample.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\samplegeneration\imagesample.cs
+++InvalidSample.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\samplegeneration\invalidsample.cs
+++ObjectGenerator.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\samplegeneration\objectgenerator.cs
+++SampleDirection.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\samplegeneration\sampledirection.cs
+++TextSample.cs
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\samplegeneration\textsample.cs
+++Help
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\
+++Shared
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\shared\
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\views\shared\
+++_ViewStart.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\_viewstart.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\views\_viewstart.cshtml
+++bootstrap-theme.css
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\content\bootstrap-theme.css
+++bootstrap-theme.css.map
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\content\bootstrap-theme.css.map
+++bootstrap-theme.min.css
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\content\bootstrap-theme.min.css
+++bootstrap-theme.min.css.map
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\content\bootstrap-theme.min.css.map
+++bootstrap.css
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\content\bootstrap.css
+++bootstrap.css.map
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\content\bootstrap.css.map
+++bootstrap.min.css
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\content\bootstrap.min.css
+++bootstrap.min.css.map
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\content\bootstrap.min.css.map
+++Site.css
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\content\site.css
+++glyphicons-halflings-regular.eot
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\fonts\glyphicons-halflings-regular.eot
+++glyphicons-halflings-regular.svg
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\fonts\glyphicons-halflings-regular.svg
+++glyphicons-halflings-regular.ttf
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\fonts\glyphicons-halflings-regular.ttf
+++glyphicons-halflings-regular.woff
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\fonts\glyphicons-halflings-regular.woff
+++glyphicons-halflings-regular.woff2
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\fonts\glyphicons-halflings-regular.woff2
+++bootstrap.js
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\scripts\bootstrap.js
+++bootstrap.min.js
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\scripts\bootstrap.min.js
+++jquery-3.4.1.intellisense.js
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\scripts\jquery-3.4.1.intellisense.js
+++jquery-3.4.1.js
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\scripts\jquery-3.4.1.js
+++jquery-3.4.1.min.js
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\scripts\jquery-3.4.1.min.js
+++jquery-3.4.1.min.map
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\scripts\jquery-3.4.1.min.map
+++jquery-3.4.1.slim.js
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\scripts\jquery-3.4.1.slim.js
+++jquery-3.4.1.slim.min.js
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\scripts\jquery-3.4.1.slim.min.js
+++jquery-3.4.1.slim.min.map
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\scripts\jquery-3.4.1.slim.min.map
+++modernizr-2.8.3.js
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\scripts\modernizr-2.8.3.js
+++Home
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\views\home\
+++DisplayTemplates
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\
+++Api.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\api.cshtml
+++Index.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\index.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\views\home\index.cshtml
+++ResourceModel.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\resourcemodel.cshtml
+++_Layout.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\shared\_layout.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\views\shared\_layout.cshtml
+++Error.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\views\shared\error.cshtml
+++ApiGroup.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\apigroup.cshtml
+++CollectionModelDescription.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\collectionmodeldescription.cshtml
+++ComplexTypeModelDescription.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\complextypemodeldescription.cshtml
+++DictionaryModelDescription.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\dictionarymodeldescription.cshtml
+++EnumTypeModelDescription.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\enumtypemodeldescription.cshtml
+++HelpPageApiModel.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\helppageapimodel.cshtml
+++ImageSample.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\imagesample.cshtml
+++InvalidSample.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\invalidsample.cshtml
+++KeyValuePairModelDescription.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\keyvaluepairmodeldescription.cshtml
+++ModelDescriptionLink.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\modeldescriptionlink.cshtml
+++Parameters.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\parameters.cshtml
+++Samples.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\samples.cshtml
+++SimpleTypeModelDescription.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\simpletypemodeldescription.cshtml
+++TextSample.cshtml
+i:{848687cb-13d8-48fe-a148-6413b99cd03f}:d:\nowy folder (3)\semestr_5\sbd2\projekt\api\webapplication1\webapplication1\areas\helppage\views\help\displaytemplates\textsample.cshtml
