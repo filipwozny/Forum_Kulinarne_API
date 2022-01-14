@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using WebApplication1.Models;
+using System.Web;
 
 namespace WebApplication1.Controllers
 {
@@ -33,7 +34,7 @@ namespace WebApplication1.Controllers
         {
             try
             {
-                string query = @"insert into dbo.Przepisy(Nazwa, Uzytkownik_nazwa_uzytkownika, Sciezka_do_obrazu) 
+                string query = @"insert into dbo.Przepisy(Nazwa, Uzytkownik_nazwa_uzytkownika, photoName) 
                                 Values( '" + przepis.Nazwa + @"', '" + przepis.Uzytkownik_nazwa_uzytkownika;
 
                 if (przepis.Sciezka_do_obrazu == null)
@@ -62,6 +63,28 @@ namespace WebApplication1.Controllers
                 return "Nie dodano przepisu";
             }
 
+        }
+
+
+        [Route("api/przepisy/SaveFile")]
+        public string SaveFile()
+        {
+            try
+            {
+                var httpRequest = HttpContext.Current.Request;
+                var postedFile = httpRequest.Files[0];
+                string filename = postedFile.FileName;
+                var physicalPath = HttpContext.Current.Server.MapPath("~/Photos/" + filename);
+
+                postedFile.SaveAs(physicalPath);
+
+                return filename;
+            }
+            catch (Exception)
+            {
+
+                return "anonymous.png";
+            }
         }
     }
 }

@@ -105,7 +105,28 @@ namespace WebApplication1.Controllers
             }
         }
 
+        public HttpResponseMessage Get(string id, string pass)
+        {
+            try
+            {
+                string query = @"SELECT * FROM dbo.Uzytkownicy WHERE Nazwa_uzytkownika = '" + id + @"' AND haslo = '" + pass + @"'";
 
+                DataTable table = new DataTable();
+                using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
+                using (var cmd = new SqlCommand(query, con))
+                using (var da = new SqlDataAdapter(cmd))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    da.Fill(table);
+                }
+
+                return Request.CreateResponse(HttpStatusCode.OK, table);
+            }
+            catch (Exception)
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound);
+            }
+        }
 
         public string Delete(string id)
         {
