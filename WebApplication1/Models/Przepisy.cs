@@ -9,7 +9,7 @@ namespace WebApplication1.Models
 {
     public class Przepisy
     {
-        public int ID_przepisu { get; set; }
+        public int Id_przepisu { get; set; }
 
         public string Nazwa { get; set; }
 
