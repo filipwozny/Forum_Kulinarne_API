@@ -8,17 +8,17 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using WebApplication1.Models;
-using System.Web;
 
 namespace WebApplication1.Controllers
 {
-    public class PrzepisyController : ApiController
+    public class IlosciController : ApiController
     {
+
         public HttpResponseMessage Get()
         {
-            string query = @"SELECT * FROM dbo.Przepisy";
+            string query = @"SELECT * FROM dbo.Ilosci";
 
-            DataTable table = new DataTable();
+            System.Data.DataTable table = new DataTable();
             using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
             using (var cmd = new SqlCommand(query, con))
             using (var da = new SqlDataAdapter(cmd))
@@ -30,12 +30,13 @@ namespace WebApplication1.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, table);
         }
 
-        //api/przepisy/{id}
+
+        //api/Ilosci/{id_przepisu}
         public HttpResponseMessage Get(int id)
         {
-            string query = @"SELECT * FROM dbo.Przepisy WHERE id_przepisu = " + id;
+            string query = @"SELECT * FROM dbo.Ilosci WHERE przepis_id = " + id;
 
-            DataTable table = new DataTable();
+            System.Data.DataTable table = new DataTable();
             using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
             using (var cmd = new SqlCommand(query, con))
             using (var da = new SqlDataAdapter(cmd))
@@ -48,24 +49,16 @@ namespace WebApplication1.Controllers
         }
 
 
-
-
-        public string Post([FromBody] Przepisy przepis)
+        public string Post([FromBody] Ilosci ilosci)
         {
             try
             {
-                string query = @"insert into dbo.Przepisy(Nazwa, Uzytkownik_nazwa_uzytkownika, photoName) 
-                                Values( '" + przepis.Nazwa + @"', '" + przepis.Autor;
-
-                if (przepis.Sciezka_do_obrazu == null)
-                {
-                   query += @"', NULL)";
-                }
-                else
-                {
-                    query += @"', '" + przepis.Sciezka_do_obrazu + @"')";
-                }
-
+                string query = @"insert into ilosci(ilosc , skladnik_nazwa , jednostka_nazwa , przepis_id) 
+                                Values( "
+                                + ilosci.Ilosc + @", '"
+                                + ilosci.Skladnik_nazwa + @"', '"
+                                + ilosci.Jednostka_nazwa + @"', "
+                                + ilosci.Przepis_id +  @")";
 
                 DataTable table = new DataTable();
                 using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
@@ -75,36 +68,15 @@ namespace WebApplication1.Controllers
                     cmd.CommandType = CommandType.Text;
                     da.Fill(table);
                 }
-                return "Dodano przepis";
+                return "Dodano skladnik do przepisu";
 
             }
             catch (Exception)
             {
-                return "Nie dodano przepisu";
+
+                return "Nie dodano skladniku do przepisu";
             }
 
-        }
-
-
-        [Route("api/przepisy/SaveFile")]
-        public string SaveFile()
-        {
-            try
-            {
-                var httpRequest = HttpContext.Current.Request;
-                var postedFile = httpRequest.Files[0];
-                string filename = postedFile.FileName;
-                var physicalPath = HttpContext.Current.Server.MapPath("~/Photos/" + filename);
-
-                postedFile.SaveAs(physicalPath);
-
-                return filename;
-            }
-            catch (Exception)
-            {
-
-                return "anonymous.png";
-            }
         }
     }
 }

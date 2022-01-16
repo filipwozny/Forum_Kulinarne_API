@@ -15,7 +15,7 @@ namespace WebApplication1.Models
 
         public float Srednia_recenzji { get; set; }
 
-        public string Uzytkownik_nazwa_uzytkownika { get; set; }
+        public string Autor { get; set; }
 
         public string Admin_nazwa_uzytkownika { get; set; }
 

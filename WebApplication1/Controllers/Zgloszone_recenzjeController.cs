@@ -8,17 +8,17 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using WebApplication1.Models;
-using System.Web;
+
 
 namespace WebApplication1.Controllers
 {
-    public class PrzepisyController : ApiController
+    public class Zgloszone_recenzjeController : ApiController
     {
         public HttpResponseMessage Get()
         {
-            string query = @"SELECT * FROM dbo.Przepisy";
+            string query = @"SELECT * FROM dbo.Zgloszone_recenzje";
 
-            DataTable table = new DataTable();
+            System.Data.DataTable table = new DataTable();
             using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
             using (var cmd = new SqlCommand(query, con))
             using (var da = new SqlDataAdapter(cmd))
@@ -30,12 +30,13 @@ namespace WebApplication1.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, table);
         }
 
-        //api/przepisy/{id}
+
+        //api/zgloszone_recenzje/{Recenzje_id_recenzji}
         public HttpResponseMessage Get(int id)
         {
-            string query = @"SELECT * FROM dbo.Przepisy WHERE id_przepisu = " + id;
+            string query = @"SELECT * FROM dbo.Zgloszone_recenzje WHERE Recenzje_id_recenzji = " + id + @"";
 
-            DataTable table = new DataTable();
+            System.Data.DataTable table = new DataTable();
             using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
             using (var cmd = new SqlCommand(query, con))
             using (var da = new SqlDataAdapter(cmd))
@@ -47,24 +48,24 @@ namespace WebApplication1.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, table);
         }
 
-
-
-
-        public string Post([FromBody] Przepisy przepis)
+        public string Post([FromBody] Zgloszone_recenzje zgloszone_Recenzje)
         {
             try
             {
-                string query = @"insert into dbo.Przepisy(Nazwa, Uzytkownik_nazwa_uzytkownika, photoName) 
-                                Values( '" + przepis.Nazwa + @"', '" + przepis.Autor;
+                string query = @"insert into dbo.zgloszone_Recenzje(Recenzje_id_recenzji, Opis ) 
+                                Values( "
+                                + zgloszone_Recenzje.Recenzje_id_recenzji + @", ";
 
-                if (przepis.Sciezka_do_obrazu == null)
+                if (zgloszone_Recenzje.Opis != null)
                 {
-                   query += @"', NULL)";
+                    query += "'" + zgloszone_Recenzje.Opis + @"' ";
                 }
                 else
                 {
-                    query += @"', '" + przepis.Sciezka_do_obrazu + @"')";
+                    query += @"NULL ";
                 }
+
+                query += @")";
 
 
                 DataTable table = new DataTable();
@@ -75,36 +76,42 @@ namespace WebApplication1.Controllers
                     cmd.CommandType = CommandType.Text;
                     da.Fill(table);
                 }
-                return "Dodano przepis";
+                return "Dodano recenzje";
 
             }
             catch (Exception)
             {
-                return "Nie dodano przepisu";
+
+                return "Nie dodano recenzji";
             }
 
         }
 
-
-        [Route("api/przepisy/SaveFile")]
-        public string SaveFile()
+        public string Put([FromBody] Zgloszone_recenzje zgloszone_Recenzje)
         {
             try
             {
-                var httpRequest = HttpContext.Current.Request;
-                var postedFile = httpRequest.Files[0];
-                string filename = postedFile.FileName;
-                var physicalPath = HttpContext.Current.Server.MapPath("~/Photos/" + filename);
+                string query = @"UPDATE dbo.zgloszone_Przepisy SET status_zgloszenia = '" + zgloszone_Recenzje.Status_zgloszenia + @"'"
+                + @"WHERE id_zgloszenia = " + zgloszone_Recenzje.Id_zgloszenia + @"";
 
-                postedFile.SaveAs(physicalPath);
 
-                return filename;
+                DataTable table = new DataTable();
+                using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
+                using (var cmd = new SqlCommand(query, con))
+                using (var da = new SqlDataAdapter(cmd))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    da.Fill(table);
+                }
+                return "Zmieniono widoczność recenzji";
+
             }
             catch (Exception)
             {
 
-                return "anonymous.png";
+                return "Nie zmieniono widoczności recenzji";
             }
+
         }
     }
 }
