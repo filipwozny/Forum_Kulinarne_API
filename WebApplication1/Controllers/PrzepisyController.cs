@@ -124,5 +124,40 @@ namespace WebApplication1.Controllers
                 return "anonymous.png";
             }
         }
+
+        public string Put([FromBody] Przepisy przepisy)
+        {
+            try
+            {
+                string query = @"UPDATE dbo.Przepisy SET widocznosc = ";
+                if (przepisy.Widocznosc)
+                {
+
+                    query += @"1";
+                }
+                else query += @"0";
+
+                query += @" WHERE id_przepisu = " + przepisy.Id_przepisu + @"";
+
+                DataTable table = new DataTable();
+                using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
+                using (var cmd = new SqlCommand(query, con))
+                using (var da = new SqlDataAdapter(cmd))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    da.Fill(table);
+                }
+                return "Zmieniono widoczność przepisu";
+
+            }
+            catch (Exception)
+            {
+
+                return "Nie zmieniono widoczności przepisu";
+            }
+
+        }
+
+
     }
 }

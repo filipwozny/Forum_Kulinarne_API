@@ -18,7 +18,8 @@ namespace WebApplication1.Models
 
         public string Nazwisko { get; set; }
 
-        public int Czy_admin { get; set; }
+        public Boolean Czy_admin { get; set; }
+       
 
         public int Numer_telefonu { get; set; }
 

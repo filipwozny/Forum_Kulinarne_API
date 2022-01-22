@@ -19,7 +19,7 @@ namespace WebApplication1.Models
 
         public string Admin_nazwa_uzytkownika { get; set; }
 
-        public int Widocznosc { get; set; }
+        public Boolean Widocznosc { get; set; }
 
         public DateTime Data_dodania { get; set; }
 
