@@ -56,9 +56,9 @@ namespace WebApplication1.Controllers
                 string query = @"insert into ilosci(ilosc , skladnik_nazwa , jednostka_nazwa , przepis_id) 
                                 Values( "
                                 + ilosci.ilosc + @", '"
-                                + ilosci.nazwa + @"', '"
-                                + ilosci.jednostka + @"', "
-                                + ilosci.id_przepisu +  @")";
+                                + ilosci.skladnik_nazwa + @"', '"
+                                + ilosci.jednostka_nazwa + @"', "
+                                + ilosci.przepis_id +  @")";
 
                 DataTable table = new DataTable();
                 using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))

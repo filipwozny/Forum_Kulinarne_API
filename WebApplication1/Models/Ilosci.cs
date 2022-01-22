@@ -11,10 +11,10 @@ namespace WebApplication1.Models
 
         public float ilosc { get; set; }
 
-        public string nazwa { get; set; }
+        public string skladnik_nazwa { get; set; }
 
-        public string jednostka { get; set; }
+        public string jednostka_nazwa { get; set; }
 
-        public int id_przepisu { get; set; }
+        public int przepis_id { get; set; }
     }
 }
