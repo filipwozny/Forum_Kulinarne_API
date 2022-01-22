@@ -9,6 +9,6 @@ namespace WebApplication1.Models
     {
         public int Przepis_id { get; set; }
 
-        public string Kategoria_nazwa { get; set; }
+        public int Kategoria_id { get; set; }
     }
 }

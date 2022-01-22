@@ -154,6 +154,55 @@ namespace WebApplication1.Controllers
 
         }
 
+
+        public string Put([FromBody] Uzytkownicy user)
+        {
+            try
+            {
+                string query = @"update dbo.uzytkownicy SET haslo = '"
+                                + user.Haslo + @"',  imie = '"
+                                + user.Imie + @"', nazwisko = '"
+                                + user.Nazwisko + @"', numer_telefonu = ";
+
+                if (user.Numer_telefonu > 0)
+                {
+                    query += user.Numer_telefonu + @", mail = ";
+                }
+                else
+                {
+                    query += @"NULL, mail = ";
+                }
+
+                if (user.Mail != null)
+                {
+                    query += @" '" + user.Mail + @"'";
+                }
+                else
+                {
+                    query += @"NULL";
+                }
+
+                query += @" WHERE nazwa_uzytkownika = '" + user.Nazwa_uzytkownika + @"'";
+
+                DataTable table = new DataTable();
+                using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
+                using (var cmd = new SqlCommand(query, con))
+                using (var da = new SqlDataAdapter(cmd))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    da.Fill(table);
+                }
+                return "Zaktualizowano dane użytkownika";
+
+            }
+            catch (Exception)
+            {
+
+                return "Nie zaktualizowano dane użytkownika";
+            }
+
+        }
+
     }
 
 }

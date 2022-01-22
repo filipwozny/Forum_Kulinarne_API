@@ -23,7 +23,9 @@ namespace WebApplication1.Models
 
         public DateTime Data_dodania { get; set; }
 
-        public string Sciezka_do_obrazu { get; set; }
+        public string photoName { get; set; }
+
+        public string Opis { get; set; }
 
     }
 }

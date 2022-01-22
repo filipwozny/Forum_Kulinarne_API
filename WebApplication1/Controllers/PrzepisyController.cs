@@ -48,22 +48,40 @@ namespace WebApplication1.Controllers
         }
 
 
+        //api/przepisy/{nazwa}
+        public HttpResponseMessage Get(string nazwa)
+        {
+            string query = @"SELECT id_przepisu FROM dbo.Przepisy WHERE nazwa = '" + nazwa + @"'";
+
+            DataTable table = new DataTable();
+            using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
+            using (var cmd = new SqlCommand(query, con))
+            using (var da = new SqlDataAdapter(cmd))
+            {
+                cmd.CommandType = CommandType.Text;
+                da.Fill(table);
+            }
+
+            return Request.CreateResponse(HttpStatusCode.OK, table);
+        }
+
+
 
 
         public string Post([FromBody] Przepisy przepis)
         {
             try
             {
-                string query = @"insert into dbo.Przepisy(Nazwa, Uzytkownik_nazwa_uzytkownika, photoName) 
-                                Values( '" + przepis.Nazwa + @"', '" + przepis.Autor;
+                string query = @"insert into dbo.Przepisy(Nazwa, Autor, Opis, photoName) 
+                                Values( '" + przepis.Nazwa + @"', '" + przepis.Autor + @"', '" + przepis.Opis;
 
-                if (przepis.Sciezka_do_obrazu == null)
+                if (przepis.photoName == null)
                 {
-                   query += @"', NULL)";
+                   query += @"', 'anonymous.png')";
                 }
                 else
                 {
-                    query += @"', '" + przepis.Sciezka_do_obrazu + @"')";
+                    query += @"', '" + przepis.photoName + @"')";
                 }
 
 

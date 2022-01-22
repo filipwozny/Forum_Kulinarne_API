@@ -51,10 +51,10 @@ namespace WebApplication1.Controllers
         {
             try
             {
-                string query = @"insert into dbo.kategorie_Przepisow(przepis_id, kategoria_nazwa ) 
+                string query = @"insert into dbo.kategorie_Przepisow(przepis_id, kategoria_id ) 
                                 Values( "
-                                + kategorie_Przepisow.Przepis_id + @", '"
-                                + kategorie_Przepisow.Kategoria_nazwa + @"') ";
+                                + kategorie_Przepisow.Przepis_id + @", "
+                                + kategorie_Przepisow.Kategoria_id + @") ";
 
                 DataTable table = new DataTable();
                 using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
@@ -70,7 +70,7 @@ namespace WebApplication1.Controllers
             catch (Exception)
             {
 
-                return "Nie dodano przepisu do danej kategorii";
+                return "Nie dodano przepis do danej kategorii";
             }
 
         }
