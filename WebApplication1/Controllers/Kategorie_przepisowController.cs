@@ -33,7 +33,7 @@ namespace WebApplication1.Controllers
         // api/Kategorie_przepisow/{kategoria_nazwa}
         public HttpResponseMessage Get(string id)
         {
-            string query = @"SELECT * FROM dbo.Kategorie_przepisow WHERE kategoria_nazwa = '" + id +@"'";
+            string query = @"SELECT * FROM przepisy p INNER JOIN kategorie_przepisow k ON p.id_przepisu = k.przepis_id WHERE k.kategoria_id = (SELECT id FROM kategorie WHERE nazwa = '" + id  + @"')" ;
 
             System.Data.DataTable table = new DataTable();
             using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
