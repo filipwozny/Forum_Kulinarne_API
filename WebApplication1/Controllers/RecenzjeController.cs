@@ -95,9 +95,8 @@ namespace WebApplication1.Controllers
             try
             {
                 string query = @"UPDATE dbo.Recenzje SET widocznosc = ";
-                if (recenzje.Widzocnosc == 1 )
+                if (recenzje.Widzocnosc)
                 {
-
                     query += @"1";
                 }
                 else {

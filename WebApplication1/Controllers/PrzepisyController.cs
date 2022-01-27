@@ -133,7 +133,6 @@ namespace WebApplication1.Controllers
                 string query = @"UPDATE dbo.Przepisy SET widocznosc = ";
                 if (przepisy.Widocznosc)
                 {
-
                     query += @"1";
                 }
                 else query += @"0";

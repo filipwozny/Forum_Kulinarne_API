@@ -17,7 +17,7 @@ namespace WebApplication1.Models
 
         public string Komentarz { get; set; }
 
-        public int Widzocnosc { get; set; }
+        public Boolean Widzocnosc { get; set; }
 
         public DateTime Data_dodania { get; set; }
 
