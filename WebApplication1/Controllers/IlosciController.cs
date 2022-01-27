@@ -58,7 +58,7 @@ namespace WebApplication1.Controllers
                                 + ilosci.ilosc + @", '"
                                 + ilosci.skladnik_nazwa + @"', '"
                                 + ilosci.jednostka_nazwa + @"', "
-                                + ilosci.przepis_id +  @")";
+                                + ilosci.przepis_id + @")";
 
                 DataTable table = new DataTable();
                 using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
@@ -75,6 +75,32 @@ namespace WebApplication1.Controllers
             {
 
                 return "Nie dodano skladniku do przepisu";
+            }
+
+        }
+
+        public string Delete(string id)
+        {
+            try
+            {
+                string query = @"DELETE FROM dbo.ilosci WHERE przepis_id = '" + id + @"'";
+
+
+                DataTable table = new DataTable();
+                using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
+                using (var cmd = new SqlCommand(query, con))
+                using (var da = new SqlDataAdapter(cmd))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    da.Fill(table);
+                }
+                return "Usunięto użytkownika";
+
+            }
+            catch (Exception)
+            {
+
+                return "Nie znaleziono użytkownika";
             }
 
         }
