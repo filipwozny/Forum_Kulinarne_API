@@ -78,5 +78,31 @@ namespace WebApplication1.Controllers
             }
 
         }
+
+        public string Delete(string id)
+        {
+            try
+            {
+                string query = @"DELETE FROM dbo.ilosci WHERE id_przepisu = '" + id + @"'";
+
+
+                DataTable table = new DataTable();
+                using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
+                using (var cmd = new SqlCommand(query, con))
+                using (var da = new SqlDataAdapter(cmd))
+                {
+                    cmd.CommandType = CommandType.Text;
+                    da.Fill(table);
+                }
+                return "Usunięto ilości";
+
+            }
+            catch (Exception)
+            {
+
+                return "Nie znaleziono ilości";
+            }
+
+        }
     }
 }
