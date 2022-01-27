@@ -31,10 +31,10 @@ namespace WebApplication1.Controllers
         }
 
 
-        //api/zgloszone_recenzje/{Recenzje_id_recenzji}
+        //api/zgloszone_recenzje/{id_zgloszenia}
         public HttpResponseMessage Get(int id)
         {
-            string query = @"SELECT * FROM dbo.Zgloszone_recenzje WHERE Recenzje_id_recenzji = " + id + @"";
+            string query = @"SELECT p.id_przepisu FROM przepisy p INNER JOIN recenzje r ON p.id_przepisu = r.przepis_id_przepisu INNER JOIN zgloszone_recenzje z ON r.id_recenzji = z.recenzje_id_recenzji WHERE z.id_zgloszenia =" + id ;
 
             System.Data.DataTable table = new DataTable();
             using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
@@ -91,7 +91,7 @@ namespace WebApplication1.Controllers
         {
             try
             {
-                string query = @"UPDATE dbo.zgloszone_Przepisy SET status_zgloszenia = '" + zgloszone_Recenzje.Status_zgloszenia + @"'"
+                string query = @"UPDATE dbo.zgloszone_recenzje SET status_zgloszenia = '" + zgloszone_Recenzje.Status_zgloszenia + @"'"
                 + @"WHERE id_zgloszenia = " + zgloszone_Recenzje.Id_zgloszenia + @"";
 
 

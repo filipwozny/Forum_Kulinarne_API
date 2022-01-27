@@ -58,7 +58,7 @@ namespace WebApplication1.Controllers
                                 + ilosci.ilosc + @", '"
                                 + ilosci.skladnik_nazwa + @"', '"
                                 + ilosci.jednostka_nazwa + @"', "
-                                + ilosci.przepis_id +  @")";
+                                + ilosci.przepis_id + @")";
 
                 DataTable table = new DataTable();
                 using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
@@ -83,7 +83,9 @@ namespace WebApplication1.Controllers
         {
             try
             {
-                string query = @"DELETE FROM dbo.ilosci WHERE id_przepisu = '" + id + @"'";
+
+                string query = @"DELETE FROM dbo.ilosci WHERE przepis_id = '" + id + @"'";
+
 
 
                 DataTable table = new DataTable();
@@ -94,13 +96,19 @@ namespace WebApplication1.Controllers
                     cmd.CommandType = CommandType.Text;
                     da.Fill(table);
                 }
+
+
                 return "Usunięto ilości";
+
 
             }
             catch (Exception)
             {
 
-                return "Nie znaleziono ilości";
+
+
+            return "Nie znaleziono ilości";
+
             }
 
         }
