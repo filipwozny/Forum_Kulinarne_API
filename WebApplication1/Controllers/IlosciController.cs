@@ -83,11 +83,9 @@ namespace WebApplication1.Controllers
         {
             try
             {
-<<<<<<< HEAD
+
                 string query = @"DELETE FROM dbo.ilosci WHERE przepis_id = '" + id + @"'";
-=======
-                string query = @"DELETE FROM dbo.ilosci WHERE id_przepisu = '" + id + @"'";
->>>>>>> 9cc3b04b3db1de3420086b136daf654fb51ab372
+
 
 
                 DataTable table = new DataTable();
@@ -98,21 +96,19 @@ namespace WebApplication1.Controllers
                     cmd.CommandType = CommandType.Text;
                     da.Fill(table);
                 }
-<<<<<<< HEAD
-                return "Usunięto użytkownika";
-=======
+
+
                 return "Usunięto ilości";
->>>>>>> 9cc3b04b3db1de3420086b136daf654fb51ab372
+
 
             }
             catch (Exception)
             {
 
-<<<<<<< HEAD
-                return "Nie znaleziono użytkownika";
-=======
-                return "Nie znaleziono ilości";
->>>>>>> 9cc3b04b3db1de3420086b136daf654fb51ab372
+
+
+            return "Nie znaleziono ilości";
+
             }
 
         }
