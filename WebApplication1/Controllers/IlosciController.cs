@@ -79,14 +79,11 @@ namespace WebApplication1.Controllers
 
         }
 
-        public string Delete(string id)
+        public string Delete(int id)
         {
             try
             {
-
-                string query = @"DELETE FROM dbo.ilosci WHERE przepis_id = '" + id + @"'";
-
-
+                string query = @"DELETE FROM dbo.ilosci WHERE przepis_id = " + id;
 
                 DataTable table = new DataTable();
                 using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
@@ -97,18 +94,11 @@ namespace WebApplication1.Controllers
                     da.Fill(table);
                 }
 
-
                 return "Usunięto ilości";
-
-
             }
             catch (Exception)
             {
-
-
-
-            return "Nie znaleziono ilości";
-
+                return "Nie znaleziono ilości";
             }
 
         }

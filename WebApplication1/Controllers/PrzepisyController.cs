@@ -130,7 +130,7 @@ namespace WebApplication1.Controllers
         {
             try
             {
-                string query = @"UPDATE dbo.Przepisy SET widocznosc = ";
+                string query = @"UPDATE dbo.Przepisy SET nazwa = '" + przepisy.Nazwa + @"', opis = '" + przepisy.Opis + @"', photoName = '" + przepisy.photoName + @"', widocznosc = ";
                 if (przepisy.Widocznosc)
                 {
                     query += @"1";
@@ -147,13 +147,13 @@ namespace WebApplication1.Controllers
                     cmd.CommandType = CommandType.Text;
                     da.Fill(table);
                 }
-                return "Zmieniono widoczność przepisu";
+                return "Edytowano przepis";
 
             }
             catch (Exception)
             {
 
-                return "Nie zmieniono widoczności przepisu";
+                return "Nie edytowano przepisu";
             }
 
         }
