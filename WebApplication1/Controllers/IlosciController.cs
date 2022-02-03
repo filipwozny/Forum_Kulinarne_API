@@ -48,6 +48,23 @@ namespace WebApplication1.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, table);
         }
 
+        //api/Ilosci/{nazwa_skladnika}
+        public HttpResponseMessage Get(string nazwa)
+        {
+            string query = @"SELECT przepis_id FROM dbo.Ilosci WHERE skladnik_nazwa = '" + nazwa + @"'";
+
+            System.Data.DataTable table = new DataTable();
+            using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
+            using (var cmd = new SqlCommand(query, con))
+            using (var da = new SqlDataAdapter(cmd))
+            {
+                cmd.CommandType = CommandType.Text;
+                da.Fill(table);
+            }
+
+            return Request.CreateResponse(HttpStatusCode.OK, table);
+        }
+
 
         public string Post([FromBody] Ilosci ilosci)
         {

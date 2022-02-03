@@ -51,7 +51,7 @@ namespace WebApplication1.Controllers
         //api/przepisy/{nazwa}
         public HttpResponseMessage Get(string nazwa)
         {
-            string query = @"SELECT id_przepisu FROM dbo.Przepisy WHERE nazwa = '" + nazwa + @"'";
+            string query = @"SELECT id_przepisu FROM dbo.Przepisy WHERE nazwa LIKE '%" + nazwa + @"%' AND widocznosc = 1";
 
             DataTable table = new DataTable();
             using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["SBDApp"].ConnectionString))
